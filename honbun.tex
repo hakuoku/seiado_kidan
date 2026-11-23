@@ -1,0 +1,75 @@
+\documentclass[paper={105mm,148mm},tate,book,twoside,
+jafontsize=13Q,fore-edge=12mm,head_space=12mm,foot_space=12mm,baselineskip=1.5zw,number_of_lines=17,
+open_bracket_pos=zenkakunibu_nibu,hanging_punctuation]{jlreq}
+
+\usepackage[no-math,deluxe,expert,jfm_yoko=jlreq,jfm_tate=jlreqv,haranoaji]{luatexja-preset}
+\setmainjfont{GenEi Chikugo Mincho v3 Regular}[YokoFeatures={JFM=jlreq},TateFeatures={JFM=jlreqv}]
+
+\renewcommand{\jlreqxkanjiskip}{\jlreqkanjiskip}
+\NewTobiraHeading{tobira}{-1}{pagestyle=empty,format={\null\vfil {\Large #2}}}
+
+\usepackage{graphicx} 
+\usepackage{pdfpages}
+\usepackage{pxrubrica}
+\rubysetup{||hJf>}
+\rubyintergap{-0.05}
+\usepackage{xurl}
+\urlstyle{same}
+
+\usepackage{titletoc}
+\titlecontents{tobira}[4\zw]{\large}{}{}{}[\vspace{1\baselineskip}]
+\titlecontents{chapter}[5\zw]{\normalsize \rightskip=15\zw}{}{}{　　\footnotesize\titlerule*{}\tatechuyoko{\contentspage}}
+
+\usepackage{luatexja-otf}
+\usepackage{luacode}
+\begin{luacode*}
+require("novelize.lua")
+---------------------------------------------------------
+--  ユーザー設定
+---------------------------------------------------------
+local user_config = {
+    auto_number_tatechuyoko = false,
+    auto_exclamation_space = false,
+    exclude_patterns = exclude_patterns
+}
+---------------------------------------------------------
+--  ユーザー設定ここまで
+---------------------------------------------------------
+my_novelize = make_novelize(user_config)
+\end{luacode*}
+
+\begin{document}
+\pagestyle{empty}
+\includepdf[pages={1,{}},noautoscale]{青蛙堂鬼談.pdf}
+\ModifyHeading{chapter}{label_format={},font={\small},indent=5\zw,pagebreak=begin_with_odd_page,lines=3}
+
+\tableofcontents
+
+\tobira{青蛙堂鬼談}
+
+\ModifyHeading{chapter}{format={\Large #2},indent=1\zw,pagebreak=clearpage,lines=2,after_lines=3}
+\ModifyHeading{section}{format={\large #2},indent=6\zw,lines=3}
+\NewPageStyle{honbun}{running_head_font=\footnotesize,nombre_font=\small\fontspec{LMRoman9-Regular},running_head_position=top-fore-edge,nombre_position=top-fore-edge,odd_running_head=_chapter,mark_format={_chapter={#1}}}
+\pagestyle{honbun}
+\parindent=0pt
+
+\directlua{luatexbase.add_to_callback("process_input_buffer", my_novelize, "my_novelize")}
+\input{1.txt}
+\input{2.txt}
+\input{3.txt}
+\input{4.txt}
+\input{5.txt}
+\input{6.txt}
+\input{7.txt}
+\input{8.txt}
+\input{9.txt}
+\input{10.txt}
+\input{11.txt}
+\input{12.txt}
+\directlua{luatexbase.remove_from_callback("process_input_buffer", "my_novelize")}
+
+\newpage
+\input{note.txt}
+
+\includepdf[pages={2},noautoscale]{青蛙堂鬼談.pdf}
+\end{document}

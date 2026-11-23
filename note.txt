@@ -1,0 +1,48 @@
+{\small \leftskip=7\zw 底本：「影を踏まれた女　岡本綺堂怪談集」光文社時代小説文庫、光文社
+
+　　　１９８８（昭和\tatechuyoko{63}）年\tatechuyoko{10}月\tatechuyoko{20}日初版第１刷発行
+
+\vspace{\baselineskip}
+
+\begin{tabbing}
+　　　　　　　初出：黄いろい紙\=「写真報知」\=１９２４（大正\tatechuyoko{13}）年\tatechuyoko{12}月\=\kill
+　　　　　　　初出：青蛙神\>「苦楽」\>１９２４（大正\tatechuyoko{13}）年\tatechuyoko{12}月\\
+　　　　　　　　　　利根の渡\>「苦楽」\>１９２５（大正\tatechuyoko{14}）年２月\\
+　　　　　　　　　　兄妹の魂、不詳\\
+　　　　　　　　　　猿の眼\>「苦楽」\>１９２５（大正\tatechuyoko{14}）年７月\\
+　　　　　　　　　　蛇精\>「苦楽」\>１９２５（大正\tatechuyoko{14}）年５月\\
+　　　　　　　　　　清水の井\>「写真報知」\>１９２４（大正\tatechuyoko{13}）年７月\\
+　　　　　　　　　　窯変\>「苦楽」\>１９２５（大正\tatechuyoko{14}）年６月\\
+　　　　　　　　　　蟹\>「苦楽」\>１９２５（大正\tatechuyoko{14}）年４月\\
+　　　　　　　　　　一本足の女\>「苦楽」\>１９２５（大正\tatechuyoko{14}）年３月\\
+　　　　　　　　　　黄いろい紙\>「苦楽」\>１９２５（大正\tatechuyoko{14}）年９月\\
+　　　　　　　　　　笛塚\>「苦楽」\>１９２５（大正\tatechuyoko{14}）年１月\\
+　　　　　　　　　　龍馬の池\>「苦楽」\>１９２５（大正\tatechuyoko{14}）年８月\\
+\end{tabbing}
+
+※「不便」と「不憫」の混在は、底本通りです。
+
+\vspace{\baselineskip}
+
+入力：和井府清十郎
+
+校正：原田頌子
+
+\vspace{\baselineskip}
+
+２００２年３月\tatechuyoko{25}日公開
+
+２０１４年６月９日修正
+
+\vspace{\baselineskip}
+
+青空文庫作成ファイル：
+
+このファイルは、インターネットの図書館、青空文庫（\url{http://www.aozora.gr.jp/}）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。
+
+\vspace{\baselineskip}
+
+文庫版編集にあたっては、２０１２年中央公論新社より刊行の中公文庫「青蛙堂鬼談　岡本綺堂読物集二」、ならびに１９６９年青蛙房より刊行の「岡本綺堂読物選集　第八巻　異妖編　上」を適宜参照しました。
+
+\leftskip=0\zw
+}

@@ -1,0 +1,7 @@
+/印刷用/
+/表紙用/
+*.aux
+*.log
+*.synctex.gz
+*.toc
+honbun.pdf
